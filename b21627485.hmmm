@@ -1,0 +1,13 @@
+0 read r1            #r1= falling Time
+1 read r2            #r2= initial Velocity
+2 read r3            #r3= initial Position
+3 setn r4 -10        #r4= gravity gravity constant=-10
+4 setn r5 2
+5 mul r6 r4 r1
+6 mul r7 r6 r1
+7 div r8 r7 r5
+8 mul r9 r2 r1
+9 add r10 r8 r9
+10 add r11 r3 r10
+11 write r11
+12 halt
